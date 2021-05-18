@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    * {
+        margin: 0;
+        padding-inline: 0;
+    }
+        header {
+            background: linear-gradient(to bottom, #3A2CAC, #631D9F);
+            height: 280px;
+            padding: 20px
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+        }
+        header nav a:hover {
+            color: #f90
+        }
+        header nav span {
+            float: right
+        }
+        header nav li {
+            display: inline-block;
+            padding-right: 40px;
+        }
+        .headerMain {
+            width: 730px;
+            margin: 50px auto;
+            color:white
+        }
+        .headerMain ul {
+            float: right;
+            list-style-type: none;
+        }
+        .headerMain h1 {
+            line-height: 70px;
+        }
+        .banner {
+            /* border: 1px solid black; */
+            width: 690px;
+            height:160px;
+            padding: 20px;
+            position: relative;
+            margin: 0 auto;
+            margin-top: -100px;
+            background:white;
+            transition: all 1s;
+            box-shadow: 0 0 8px 0 rgba(0,0,0,.3); 
+
+        }
+        .banner ul {
+            text-align: center;
+            font-size: 0;
+        }
+        .banner li {
+            display: inline-block;
+            width: 180px;
+            height:160px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .banner .feature {
+            width: 80px;
+            height: 80px;
+            background: #F90;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+        .main {
+            width: 730px;
+            padding: 100px 0;
+            margin: 0 auto;
+            /* background: yellow; */
+            
+        }
+        .main .main1 img {
+            width: 440px;
+            height: 235px;
+            margin-left: 20px;
+            float: left
+        }
+        .main .main1 ul {
+            list-style: none;
+        }
+        .main .main1 li {
+            font-size: 24px;
+            color:#999;
+            line-height: 50px;
+        }
+        .main .main1 h1 {
+            font-size: 36px;
+            color: #999;
+            margin-bottom: 50px;
+        }
+        .main .main1 .blockText {
+            float: left;
+            margin-left: 20px;
+        }
+        
+        .main1, .main2 {
+            display: block;
+            margin-bottom: 100px;
+            overflow: auto;
+        }
+        .main2 {
+            margin-bottom: 0;
+        }
+        /* .main::after{
+            clear: both;
+            content: ' ';
+            visibility: none;
+        } */
+        .main .main2 img {
+            width: 440px;
+            height: 235px;
+            margin-left: 20px;
+            float: right
+        }
+        .main .main2 ul {
+            list-style: none;
+        }
+        .main .main2 li {
+            font-size: 24px;
+            color:#999;
+            line-height: 50px;
+        }
+        .main .main2 h1 {
+            font-size: 36px;
+            color: #999;
+            margin-bottom: 50px;
+        }
+        .main .main2 .blockText {
+            float: left;
+            margin-left: 20px;
+        }
+        footer {
+            text-align: center;
+        }
+        footer span {
+            color: #999;
+            display: inline-block;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span><a href="#">登陆</a></span>
+            <ul>
+                <li><a href="#">CSS基础知识</a></li>
+                <li><a href="#">效果与动画</a></li>
+                <li><a href="#">工具与工程化</a></li>
+            </ul>
+        </nav>
+        <div class="headerMain">
+            <ul>
+                <li><span>-2017年末新课</span></li>
+                <li><span>-前段看家本领</span></li>
+                <li><span>-全面深入的讲解</span></li>
+            </ul>
+            <h1>全面深入讲解CSS</h1>
+        </div>
+    </header>
+    <section class="banner">
+        <ul>
+            <li>
+                <div class="feature feature1"></div>
+                <p>特点1</p>
+            </li>
+            <li>
+                <div class="feature feature2"></div>
+                <p>特点2</p>
+            </li>
+            <li>
+                <div class="feature feature3"></div>
+                <p>特点3</p>
+            </li>
+        </ul>
+    </section>
+    <section class="main">
+        <div class="main1">
+            <img src="./assets/1.png" alt="" />
+            <div class="blockText">
+                <h1>知识全面讲解</h1>
+                <ul>
+                    <li><span>-核心知识全面覆盖</span></li>
+                    <li><span>-涉猎非核心知识</span></li>
+                    <li><span>-无用知识看一看</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="blockText">
+                <h1>知识全面讲解</h1>
+                <ul>
+                    <li><span>-以点带面</span></li>
+                    <li><span>-知识讲解清楚深入</span></li>
+                    <li><span>-没见的知识也深入</span></li>
+                </ul>
+            </div>
+            <img src="./assets/2.png" alt="" /> 
+        </div>
+    </section>
+    <footer>
+        <span>TooBug @ 2018</span>
+    </footer>
+</body>
+</html>
